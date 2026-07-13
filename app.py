@@ -1,3 +1,12 @@
+import os
+# This MUST happen before importing keras or tensorflow
+os.environ["KERAS_BACKEND"] = "tensorflow"
+
+import streamlit as st
+import keras
+import pickle
+import numpy as np
+# ... the rest of your imports and text cleaning code below
 import re
 import pickle
 import numpy as np
